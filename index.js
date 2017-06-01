@@ -3,8 +3,7 @@ const mongodb = require('mongodb');
 const validUrl = require('valid-url');
 const app = express();
 const MongoClient = mongodb.MongoClient;
-//const dbUrl = process.env.SHORTENER_APP_MONGOLAB_URI;
-const dbUrl = 'mongodb://shortenerApp:fccShortenerApp@ds163718.mlab.com:63718/url_shortener';
+const dbUrl = process.env.SHORTENER_APP_MONGOLAB_URI;
 
 const addNew = (param, addNewCallback) => {
   let json = {};
@@ -25,7 +24,7 @@ const addNew = (param, addNewCallback) => {
 
           json = {
             "original_url": documents[0].originalUrl,
-            "short_url": documents[0].key
+            "short_url": "https://thekholm80-url-shortener.herokuapp.com/" + documents[0].key
           };
 
           addNewCallback(json);
