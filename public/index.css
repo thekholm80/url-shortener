@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 80vh;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.content p {
+  background: lightgray;
+
+  color: red;
+  font-family: Monospace;
+}

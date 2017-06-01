@@ -1,0 +1,16 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "FCC URL Shortener Microservice Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Holm",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "^2.2.27",
+    "valid-url": "^1.0.9"
+  }
+}
