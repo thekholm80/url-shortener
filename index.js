@@ -3,7 +3,7 @@ const mongodb = require('mongodb');
 const validUrl = require('valid-url');
 const app = express();
 const MongoClient = mongodb.MongoClient;
-const dbUrl = process.env.SHORTENER_APP_MONGOLAB_URI;
+const dbUrl = process.env.MONGOLAB_URI;
 
 const addNew = (param, addNewCallback) => {
   let json = {};
